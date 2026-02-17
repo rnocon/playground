@@ -8,7 +8,7 @@ if [[ $# -lt 1 ]] ; then
 fi
 
 BACKUP_BASE="/workspaces/playground/backup"
-BACKUP_PATH="$BACKUP_BASE/$1"
+BACKUP_PATH="$BACKUP_BASE/backup_$1"
 
 if [[ ! -d "$BACKUP_PATH" ]]; then
     echo "Fehler: Backup-Ordner existiert nicht: $BACKUP_PATH"
